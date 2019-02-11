@@ -46,14 +46,6 @@ def update_password(username, password):
     conn.close()
 
 
-def del_user(username):
-    delete = userTable.delete().where(userTable.c.username == username)
-
-    conn = engine.connect()
-    conn.execute(delete)
-    conn.close()
-
-
 def show_users():
     select_stmt = select([userTable.c.id,
                         userTable.c.username,
