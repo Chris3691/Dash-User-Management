@@ -4,12 +4,12 @@ A template Dash App with basic user authentication, user permissions (admin & no
 
 The template has the following views:
 
-`login.py` - User login page, displayed it a user tries to access any page and is not currently logged in
-`page1.py` - Empty template page for your own Dash layout
-`page2.py` - Another empty template page
-`profile.py` - For users to update their own password
-`user_admin.py` - A page for admin users only, with ability to create new users and view existing users
-`404.py` - Simple 404 error message to catch requests for non-existent pages
+1. `login.py` - User login page, displayed if a user tries to access any page and is not currently logged in
+2. `page1.py` - Empty template page for your own Dash layout
+3. `page2.py` - Another empty template page
+4. `profile.py` - For users to update their own password
+5. `user_admin.py` - A page for admin users only, with ability to create new users and view existing users
+6. `404.py` - Simple 404 error message to catch requests for non-existent pages
 
 
 
