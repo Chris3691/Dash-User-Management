@@ -22,3 +22,9 @@ Default database setup is MySQL and the required table can be setup using the ta
 The database username, password, and table name need be entered in `con` paramenter of `config.txt`.
 
 Other databases can be used - refer to SQLAlchemy for required connection statement and update the `con` parameter of `config.txt`.
+
+
+# Contributions
+
+PRs accepted for suggested improvements!
+
