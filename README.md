@@ -17,7 +17,7 @@ The template has the following views:
 
 # Database Setup
 
-Default database setup is MySQL and the required table can be setup using the table_create_statement in /db.
+Default database setup is MySQL and the required table can be setup using the table_create_statement in `/db`.
 
 The database username, password, and table name need be entered in `con` paramenter of `config.txt`.
 
