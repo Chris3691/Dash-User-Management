@@ -27,7 +27,7 @@ app.layout = html.Div([
 
 
 ################################################################################
-# HANDLE PAVE ROUTING - IF USER NOT LOGGED IN, ALWAYS RETURN TO LOGIN SCREEN
+# HANDLE PAGE ROUTING - IF USER NOT LOGGED IN, ALWAYS RETURN TO LOGIN SCREEN
 ################################################################################
 @app.callback(Output('pageContent', 'children'),
               [Input('url', 'pathname')])
