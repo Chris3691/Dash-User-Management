@@ -2,6 +2,8 @@
 
 A template Dash App with basic user authentication, user permissions (admin & non-admin), and user management (create new user & update password).
 
+![](demo.gif)
+
 The template has the following views:
 
 1. `login.py` - User login page, displayed if a user tries to access any page and is not currently logged in
