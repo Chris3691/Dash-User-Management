@@ -1,6 +1,6 @@
 # Dash-User-Management
 
-A template Dash App with basic user authentication, user permissions (admin & non-admin), and user management (create new user & update password).
+A template Dash App with basic user authentication, user permissions (admin & non-admin), and user management (create new user & update password). Example app in action:
 
 ![](demo.gif)
 
