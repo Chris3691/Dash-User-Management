@@ -1,8 +1,10 @@
 # Dash-User-Management
 
-A template Dash App with basic user authentication, user permissions (admin & non-admin), and user management (create new user & update password). Example app in action:
+A template Dash App with basic user authentication, user permissions (admin & non-admin), and user management (create new user & update password). Example of template app in action with a demo page1:
 
 ![](demo.gif)
+
+The template uses Dash bootstrap components with the Flatly bootswatch theme - https://bootswatch.com/flatly/
 
 The template has the following views:
 
