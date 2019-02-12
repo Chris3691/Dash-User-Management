@@ -30,13 +30,5 @@ The database username, password, and table name need be entered in `con` paramen
 Other databases can be used - refer to SQLAlchemy for required connection statement and update the `con` parameter of `config.txt`.
 
 
-# Planned Improvements
 
-1. Ability to delete / edit users from the Admin page
-2. More validation on creating a new user from the Admin page (e.g. Username & Email should not already exist)
-
-
-# Contributions
-
-PRs accepted for suggested improvements!
 
