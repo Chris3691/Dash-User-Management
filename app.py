@@ -2,7 +2,7 @@
 import dash
 # User management initialization
 import os
-from flask_login import LoginManager, UserMixin
+from flask_login import LoginManager
 from users_mgt import db, User as base
 from config import config
 
