@@ -1,6 +1,8 @@
 # Dash-User-Management
 
-A template Dash App with basic user authentication, user permissions (admin & non-admin), and user management (create new user & update password). Example of template app in action with a demo page1:
+A template web app built in Plotly Dash for Python, which handles user creation, user authentication/login, user permissions (admin/non admin), and page navigation. This web app is a great starting point for developing a custom cloud based dashboard where the user base is relatively small e.g. accessible by team members or small organisations. 
+
+Example of app in action with a demo layout on page 1:
 
 ![](demo.gif)
 
