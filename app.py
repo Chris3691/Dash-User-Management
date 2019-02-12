@@ -28,10 +28,6 @@ login_manager.init_app(server)
 login_manager.login_view = '/login'
 
 
-# Create User class with UserMixin
-class User(UserMixin, base):
-    pass
-
 
 # callback to reload the user object
 @login_manager.user_loader
