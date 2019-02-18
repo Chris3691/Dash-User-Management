@@ -71,7 +71,7 @@ layout = dbc.Container([
                         {'label' : 'Yes', 'value' : 1},
                         {'label' : 'No', 'value' : 0},
                     ],
-                    value='0',
+                    value=0,
                     clearable=False
                 ),
                 html.Br(),
@@ -161,7 +161,7 @@ def validatePassword1(n_clicks, usernameSubmit, newPassword1Submit,
     if (n_clicks > 0) or (usernameSubmit > 0) or (newPassword1Submit > 0) or \
         (newPassword2Submit > 0) or (newEmailSubmit > 0):
 
-        if newPassword1 == newPassword2 and newPassword1 != '' and newPassword1 != None:
+        if newPassword1 == newPassword2 and len(newPassword1) > 7:
             return 'form-control is-valid'
         else:
             return 'form-control is-invalid'
@@ -189,7 +189,7 @@ def validatePassword2(n_clicks, usernameSubmit, newPassword1Submit,
     if (n_clicks > 0) or (usernameSubmit > 0) or (newPassword1Submit > 0) or \
         (newPassword2Submit > 0) or (newEmailSubmit > 0):
 
-        if newPassword1 == newPassword2 and newPassword2 != '' and newPassword2 != None:
+        if newPassword1 == newPassword2 and len(newPassword2) > 7:
             return 'form-control is-valid'
         else:
             return 'form-control is-invalid'
@@ -254,11 +254,14 @@ def createUser(n_clicks, usernameSubmit, newPassword1Submit, newPassword2Submit,
 
         if newUser and newPassword1 and newPassword2 and newEmail != '':
             if newPassword1 == newPassword2:
-                try:
-                    add_user(newUser, newPassword1, newEmail, admin)
-                    return html.Div(children=['New User created'], className='text-success')
-                except Exception as e:
-                    return html.Div(children=['New User not created'], className='text-danger')
+                if len(newPassword1) > 7:
+                    try:
+                        add_user(newUser, newPassword1, newEmail, admin)
+                        return html.Div(children=['New User created'], className='text-success')
+                    except Exception as e:
+                        return html.Div(children=['New User not created: {e}'.format(e=e)], className='text-danger')
+                else:
+                    return html.Div(children=['New Password Must Be Minimum 8 Characters'], className='text-danger')
             else:
                 return html.Div(children=['Passwords do not match'], className='text-danger')
         else:
