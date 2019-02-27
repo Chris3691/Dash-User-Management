@@ -25,7 +25,7 @@ The template has the following views:
 
 Default database setup is MySQL and the required table can be setup using the table_create_statement in `/db`.
 
-The database username, password, and table name need be entered in `con` paramenter of `config.txt`.
+The database `username`, `password`, and `database_name` need be updated in the `con` parameter of `config.txt`.
 
 Other databases can be used - refer to SQLAlchemy for required connection statement and update the `con` parameter of `config.txt`.
 
